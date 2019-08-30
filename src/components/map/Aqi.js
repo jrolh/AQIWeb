@@ -23,13 +23,13 @@ class Aqi extends Component {
     var api_url =
       "https://api.waqi.info/feed/" +
       this.state.cityList[i] +
-      "/?token=15771a1b32bc3770bdedb277dd383d37c9bfc521";
+      "/?token=";
 
     for (i = 0; i < this.state.cityList.length; i++) {
       api_url =
         "https://api.waqi.info/feed/" +
         this.state.cityList[i] +
-        "/?token=15771a1b32bc3770bdedb277dd383d37c9bfc521";
+        "/?token=";
       fetch(api_url)
         .then(res => res.json())
         .then(data => {
